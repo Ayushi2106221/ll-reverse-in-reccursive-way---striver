@@ -1,0 +1,8 @@
+if(head==NULL || head->next==NULL){
+            return head;
+        }
+        ListNode *temp=head;
+        ListNode *chotahead=reverseList(head->next);
+        temp->next->next=temp;
+        temp->next=NULL;
+        return chotahead;
